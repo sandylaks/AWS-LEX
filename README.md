@@ -5,6 +5,7 @@
 This project demonstrates how to build a chatbot using Amazon Lex and AWS Lambda to fetch employee details from a CSV file stored in Amazon S3.
 
 🛠️ Tech Stack
+
  ✅ Amazon Lex – Conversational AI for chatbot interactions
 
  ✅ AWS Lambda – Backend logic for processing user queries
@@ -26,23 +27,31 @@ This project demonstrates how to build a chatbot using Amazon Lex and AWS Lambda
 1) Create a Lex bot
    
    ✅ Add intents (GreetingsIntent, ReturnEmployeeName)
+   
    ✅ Define sample utterances (e.g., "Hi", "Find employee in department 5")
+   
    ✅ Use slots (e.g., Username, DepartmentID)
+   
    ✅ Deploy AWS Lambda
 
 3) Create a function in Python
    
    ✅ Add IAM permissions for S3 read access
+   
    ✅ Upload the employeeDetails.csv file to S3
+   
    ✅ Modify Lambda code to fetch department-wise employee data
 
 5) Connect Lex to Lambda
    
    ✅ Assign the Lambda function to fulfill ReturnEmployeeName intent
+   
    ✅ Test bot interactions in the Lex console
 
 📌 Usage
 
  ✅ Start by saying "Hi" to receive a greeting
+ 
  ✅ Enter a Department ID to get employee details
+ 
  ✅ Get responses dynamically from the S3 dataset
